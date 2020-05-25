@@ -6,17 +6,23 @@ def grid_2(height = 1, width = 1):
     Takes default values of height and width as 1.
     Will not ask for an input if parameters are passed.
 
-    >>> grid() 
+    >>> grid_2() 
     Enter height of the grid
     3
     Enter width of the grid
     4
+    Do you have any special cell coordinates to give?(y/n)
+    y
+    Enter coordinate of special cell in row,col format (zero indexed)
+    2,2
+    Do you have any special cell coordinates to give?(y/n)
+    n
      --- --- --- --- 
     |   |   |   |   |
      --- --- --- --- 
     |   |   |   |   |
      --- --- --- --- 
-    |   |   |   |   |
+    |   |   | X |   |
      --- --- --- --- 
     
     >>> grid() 
@@ -59,7 +65,7 @@ def grid_2(height = 1, width = 1):
         sc_col = list()
         
         while True:
-            if input('Do you have any special cell coordinates to give?(y/n)') == 'y':
+            if input('Do you have any special cell coordinates to give?(y/n)\n') == 'y':
                 special_coordinates = input('Enter coordinate of special cell in row,col format (zero indexed)\n').split(',')
                 try:
                     sc_row.append(int(special_coordinates[0]))
