@@ -7,6 +7,7 @@ def grid_2(height = 1, width = 1):
     Will not ask for an input if parameters are passed.
 
     >>> grid_2() 
+    -------------------------------------------------------------
     Enter height of the grid
     3
     Enter width of the grid
@@ -25,17 +26,20 @@ def grid_2(height = 1, width = 1):
     |   |   | X |   |
      --- --- --- --- 
     
-    >>> grid() 
+    >>> grid_2() 
+    -------------------------------------------------------------
     Enter height of the grid
     hdh
     Invalid input
 
-    >>> grid()
+    >>> grid_2()
+    -------------------------------------------------------------
     Enter height of the grid
     1,2,4,5
     Invalid input
 
-    >>> grid()
+    >>> grid_2()
+    -------------------------------------------------------------
     Enter height of the grid
     exit
     ...Terminating program... 
