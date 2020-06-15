@@ -66,8 +66,10 @@ def grid(height = 1, width = 1):
             string = ''
             #loop for making the strings
             if i % 2 == 0:
-                for j in range(w_loops):
+                j = 0
+                while j < w_loops:
                     string += dash_str
+                    j += 1
                 print(string)
             else:
                 for j in range(w_loops+1):
